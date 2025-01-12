@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Card Container */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 20px;
+}
+
+/* Weather Icon */
+.weather-icon {
+    width: 150px;
+    margin-top: 30px;
+}
+
+/* Weather Information */
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin-top: -4px;
+}
+
+/* Error Message */
+.error {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ff6b6b;
+    display: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .card {
+        max-width: 600px;
+        padding: 50px;
+    }
+
+    .weather h1 {
+        font-size: 80px;
+    }
+
+    .details {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 800px;
+    }
+
+    .weather h1 {
+        font-size: 100px;
+    }
+}
